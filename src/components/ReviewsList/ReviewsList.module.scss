@@ -1,0 +1,36 @@
+.reviewsList {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
+
+.nameRatingWrapper {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.reviewerWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reviewerLogo {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--color-accent-red);
+
+  & span {
+    display: inline-block;
+    background-color: var(--color-extra-light-gray);
+    padding: 15px 22px;
+    border-radius: 50%;
+  }
+}

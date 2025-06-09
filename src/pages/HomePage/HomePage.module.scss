@@ -1,0 +1,22 @@
+.mainSection {
+  background: url("/1x.webp") center / cover no-repeat;
+}
+
+.hero {
+  padding: 32px 32px;
+  width: 100%;
+  min-height: calc(100vh - 133px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  @include tablet {
+    min-height: calc(100vh - 66px);
+  }
+}
+
+.innerWrapper {
+  margin-bottom: 40px;
+}

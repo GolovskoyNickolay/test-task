@@ -1,0 +1,30 @@
+.filterName {
+  position: relative;
+  margin-bottom: 48px;
+
+  &::after {
+    content: "";
+    background-color: var(--color-light-gray);
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    width: 100%;
+  }
+}
+
+.filterList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+
+  margin-bottom: 32px;
+
+  @include tablet-only {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  &.last {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,58 @@
+@use "../utils/mixins" as mx;
+@use "../utils/media" as md;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+body {
+  @include mx.text-style(400); // Вес по умолчанию
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 0.66;
+  font-weight: 600;
+  margin-bottom: 16px;
+
+  @include md.tablet {
+    font-size: 48px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.h2 {
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.body2 {
+  @include mx.text-style(500);
+}
+
+.light {
+  color: var(--color-ultra-light-gray);
+}
+
+.grey-prim {
+  color: var(--color-primary);
+}
+
+.grey-second {
+  color: var(--color-secondary);
+}
